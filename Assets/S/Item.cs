@@ -26,7 +26,5 @@ public class Item : MonoBehaviour
     public void OffPopupAM()
     {
         item_info_popup_ar.Play("OffItemInfoPopupAM", 0, 0);
-
-        Debug.Log("취소!");
     }
 }
