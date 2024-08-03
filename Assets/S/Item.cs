@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    Animator ar;
-
-    private bool tr = false;
+    private Animator item_info_popup_ar = null;
+    private GameObject item_info_popup_obj = null;
 
     private void Awake()
     {
-        ar = this.GetComponent<Animator>();
+        item_info_popup_obj = GameObject.Find("Item info popup");
+        item_info_popup_ar = item_info_popup_obj.GetComponent<Animator>();
     }
 
     public void OnMouseDown()
     {
-        ar.Play("321312", 0, 0.0f);
+        item_info_popup_ar.Play("321312", 0, 0);
     }
 }
