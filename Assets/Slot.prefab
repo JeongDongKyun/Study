@@ -124,7 +124,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3242274362619286919}
         m_TargetAssemblyTypeName: Item, Assembly-CSharp
-        m_MethodName: OnMouseDown
+        m_MethodName: OnPopupAM
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

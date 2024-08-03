@@ -13,8 +13,20 @@ public class Item : MonoBehaviour
         item_info_popup_ar = item_info_popup_obj.GetComponent<Animator>();
     }
 
-    public void OnMouseDown()
+    public void OnPopupAM()
     {
-        item_info_popup_ar.Play("321312", 0, 0);
+        if (!item_info_popup_ar.enabled)
+        {
+            item_info_popup_ar.enabled = true;
+        }
+
+        item_info_popup_ar.Play("OnItemInfoPopupAM", 0, 0);
+    }
+
+    public void OffPopupAM()
+    {
+        item_info_popup_ar.Play("OffItemInfoPopupAM", 0, 0);
+
+        Debug.Log("취소!");
     }
 }
