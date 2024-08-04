@@ -4223,6 +4223,7 @@ GameObject:
   - component: {fileID: 826132413}
   - component: {fileID: 826132415}
   - component: {fileID: 826132414}
+  - component: {fileID: 826132416}
   m_Layer: 5
   m_Name: Shop popup
   m_TagString: Untagged
@@ -4290,6 +4291,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826132412}
   m_CullTransparentMesh: 1
+--- !u!114 &826132416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826132412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b17c8635bbe38940a2417bfbce0403f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  set_item_info: {fileID: 1004517587}
+  food_slots: {fileID: 285413471}
+  weapon_slots: {fileID: 1423636745}
 --- !u!1001 &841213944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4907,6 +4923,62 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6834121091050322239, guid: a9dd25980747f434bb45ca3342fc0001, type: 3}
   m_PrefabInstance: {fileID: 455971039}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1004517585
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1004517586}
+  - component: {fileID: 1004517587}
+  m_Layer: 0
+  m_Name: Set item info
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1004517586
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004517585}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1004517587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004517585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58dd5008eaf8740bb992698d30425c10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iteminfo_list:
+  - name: "\uC81C\uC721\uB36E\uBC25"
+    image: {fileID: 2862934829764304942, guid: 11d454a7b6a884e7c9d272a9c78187fd, type: 3}
+    price: 8000
+    explanation: "\uC81C\uC721\uB36E\uBC25"
+  - name: "\uC8FD"
+    image: {fileID: -6887405490941395797, guid: 11d454a7b6a884e7c9d272a9c78187fd, type: 3}
+    price: 7000
+    explanation: "\uC8FD"
+  - name: "\uBBF8\uC5ED\uAD6D"
+    image: {fileID: -4185807547974291950, guid: 11d454a7b6a884e7c9d272a9c78187fd, type: 3}
+    price: 4000
+    explanation: "\uBBF8\uC5ED\uAD6D"
 --- !u!224 &1016666555 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6834121091050322239, guid: a9dd25980747f434bb45ca3342fc0001, type: 3}
