@@ -11,7 +11,7 @@ public class ShopButton : MonoBehaviour
 
     public void OnMouseDown()
     {
-        content_obj.anchoredPosition = Vector2.zero;
+        content_obj.transform.localPosition = new Vector2(0, -950);
 
         item_info_popup_obj.transform.localPosition = new Vector2(300, -150);
 

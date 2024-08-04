@@ -59,8 +59,6 @@
     <Compile Include="Assets/S/Loading.cs" />
     <Compile Include="Assets/S/Item.cs" />
     <Compile Include="Assets/S/ShopButton.cs" />
-    <Compile Include="Assets/S/Scroll.cs" />
-    <Compile Include="Assets/S/Shop.cs" />
     <Compile Include="Assets/S/StartLoading.cs" />
   </ItemGroup>
   <ItemGroup>
