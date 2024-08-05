@@ -19,6 +19,10 @@ public class Shop : MonoBehaviour
 
     private int food_slots_count = 0;
     private int weapon_slots_count = 0;
+
+    // 다른 UI에서 아이템 정보 가져오기
+    private string item_name = null;
+    private Sprite item_image = null;
     private int item_price = 0;
 
     private void Awake()
@@ -64,6 +68,8 @@ public class Shop : MonoBehaviour
         item_info_popup.GetChild(2).GetComponent<TextMeshProUGUI>().text = $"{slot.item_info.price}원";
         item_info_popup.GetChild(3).GetComponent<TextMeshProUGUI>().text = slot.item_info.explanation;
 
+        item_name = slot.item_info.name;
+        item_image = slot.item_info.image;
         item_price = slot.item_info.price;
     }
 
@@ -76,6 +82,8 @@ public class Shop : MonoBehaviour
             money.SetMoney(result);
 
             buy_popup[0].SetActive(true);
+            buy_popup[0].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = item_name;
+            buy_popup[0].transform.GetChild(1).GetComponent<Image>().sprite = item_image;
 
             Debug.Log("구매 완료");
         }
