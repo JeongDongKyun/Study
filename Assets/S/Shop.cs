@@ -36,7 +36,7 @@ public class Shop : MonoBehaviour
 
         for (int i = 0; i < food_slots_count; i++)
         {
-            var slot = food_slots.GetChild(i).gameObject.GetComponent<Slot>();
+            var slot = food_slots.GetChild(i).GetComponent<Slot>();
 
             if (i < set_item_info.iteminfo_list.Count)
             {
@@ -52,7 +52,7 @@ public class Shop : MonoBehaviour
 
         for (int i = 0; i < weapon_slots_count; i++)
         {
-            var slot = weapon_slots.GetChild(i).gameObject.GetComponent<Slot>();
+            var slot = weapon_slots.GetChild(i).GetComponent<Slot>();
 
             slot.GetComponent<Button>().interactable = false;
 

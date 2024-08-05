@@ -1,15 +1,14 @@
 ﻿<Properties StartupConfiguration="{A7F3F650-10CB-A9F4-7FEC-FE3F2FB1DB2D}|">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9c441498-dfe9-4e1a-b31f-bc3c93995f95" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3f90c27f-b33d-4e38-8845-0183e365153b" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/S/Shop.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/S/UIButton.cs">
     <Files>
-      <File FileName="Assets/S/Money.cs" Line="4" Column="13" />
+      <File FileName="Assets/S/Money.cs" Line="1" Column="1" />
       <File FileName="Assets/S/Slot.cs" Line="1" Column="1" />
-      <File FileName="Assets/S/Shop.cs" Line="93" Column="31" />
+      <File FileName="Assets/S/Shop.cs" Line="18" Column="30" />
+      <File FileName="Assets/S/UIButton.cs" Line="31" Column="62" />
+      <File FileName="Assets/S/Inventory.cs" Line="23" Column="60" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -27,5 +26,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

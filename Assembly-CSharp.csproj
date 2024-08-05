@@ -61,10 +61,11 @@
     <Compile Include="Assets/S/Slot.cs" />
     <Compile Include="Assets/S/ItemInfo.cs" />
     <Compile Include="Assets/S/SetItemInfo.cs" />
-    <Compile Include="Assets/S/ShopButton.cs" />
+    <Compile Include="Assets/S/UIButton.cs" />
     <Compile Include="Assets/S/Money.cs" />
     <Compile Include="Assets/S/Shop.cs" />
     <Compile Include="Assets/S/StartLoading.cs" />
+    <Compile Include="Assets/S/Inventory.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
