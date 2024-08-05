@@ -8,6 +8,6 @@ public class ItemInfo
     [Header("상점 아이템 정보")]
     public string name = null;
     public Sprite image = null;
-    public int price = 0;
+    public string price = null;
     public string explanation = null;
 }

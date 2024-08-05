@@ -8,7 +8,7 @@ public class Slot : MonoBehaviour
 {
     [SerializeField] private Image image = null;
 
-    private ItemInfo item_info = null;
+    [HideInInspector] public ItemInfo item_info = null;
 
     public void SlotItem(ItemInfo item)
     {

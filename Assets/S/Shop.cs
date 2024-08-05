@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
@@ -8,6 +9,7 @@ public class Shop : MonoBehaviour
     [SerializeField] private SetItemInfo set_item_info = null;
     [SerializeField] private Transform food_slots = null;
     [SerializeField] private Transform weapon_slots = null;
+    [SerializeField] private Transform item_info_popup = null;
 
     private Button button = null;
 
@@ -44,5 +46,13 @@ public class Shop : MonoBehaviour
 
             slot_list.Add(slot);
         }
+    }
+
+    public void ItemInfoPopup(Slot slot) // Item info popup Á¤º¸
+    {
+        item_info_popup.GetChild(0).GetComponent<TextMeshProUGUI>().text = slot.item_info.name;
+        item_info_popup.GetChild(1).GetComponent<Image>().sprite = slot.item_info.image;
+        item_info_popup.GetChild(2).GetComponent<TextMeshProUGUI>().text = slot.item_info.price;
+        item_info_popup.GetChild(3).GetComponent<TextMeshProUGUI>().text = slot.item_info.explanation;
     }
 }
