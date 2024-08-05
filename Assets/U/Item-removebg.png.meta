@@ -14,6 +14,12 @@ TextureImporter:
   - first:
       213: 2727287596206273186
     second: Item-removebg_3
+  - first:
+      213: -5717597051837756313
+    second: Item-removebg_4
+  - first:
+      213: -4027207554908553844
+    second: Item-removebg_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -111,7 +117,7 @@ TextureImporter:
         width: 88
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -132,7 +138,7 @@ TextureImporter:
         width: 61
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,7 +159,7 @@ TextureImporter:
         width: 61
         height: 54
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -174,7 +180,7 @@ TextureImporter:
         width: 79
         height: 79
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,6 +188,48 @@ TextureImporter:
       bones: []
       spriteID: 2a234347e9549d520800000000000000
       internalID: 2727287596206273186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item-removebg_4
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1282
+        width: 61
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76cc36446c307a0b0800000000000000
+      internalID: -5717597051837756313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Item-removebg_5
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 1280
+        width: 76
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8df7ecd01c7c18c0800000000000000
+      internalID: -4027207554908553844
       vertices: []
       indices: 
       edges: []
