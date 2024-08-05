@@ -16,13 +16,13 @@ public class Money : MonoBehaviour
 
     private void Update() // test
     {
-        tmp.text = $"{money}¿ø";
+        tmp.text = $"{money}ì›";
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
             money += 1000;
 
-            Debug.Log("µ· Ä¡Æ®Å° »ç¿ë ¿Ï·á");
+            Debug.Log("ëˆ ì¹˜íŠ¸í‚¤ ì™„ë£Œ");
         }
     }
 

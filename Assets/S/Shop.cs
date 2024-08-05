@@ -20,7 +20,6 @@ public class Shop : MonoBehaviour
     private int food_slots_count = 0;
     private int weapon_slots_count = 0;
 
-    // ¥Ÿ∏• UIø°º≠ æ∆¿Ã≈€ ¡§∫∏ ∞°¡Æø¿±‚
     private string item_name = null;
     private Sprite item_image = null;
     private int item_price = 0;
@@ -61,14 +60,14 @@ public class Shop : MonoBehaviour
         }
     }
 
-    public void ItemInfoPopup(Slot slot) // Item info popup ¡§∫∏
+    public void ItemInfoPopup(Slot slot)
     {
         item_info_popup.GetChild(0).GetComponent<TextMeshProUGUI>().text = slot.item_info.name;
         item_info_popup.GetChild(1).GetComponent<Image>().sprite = slot.item_info.image;
-        item_info_popup.GetChild(2).GetComponent<TextMeshProUGUI>().text = $"{slot.item_info.price}ø¯";
+        item_info_popup.GetChild(2).GetComponent<TextMeshProUGUI>().text = $"{slot.item_info.price}Ïõê";
         item_info_popup.GetChild(3).GetComponent<TextMeshProUGUI>().text = slot.item_info.explanation;
 
-        item_name = slot.item_info.name;
+        item_name = $"{slot.item_info.name} ÏïÑÏù¥ÌÖú Íµ¨Îß§ ÏôÑÎ£å";
         item_image = slot.item_info.image;
         item_price = slot.item_info.price;
     }
@@ -85,13 +84,13 @@ public class Shop : MonoBehaviour
             buy_popup[0].transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = item_name;
             buy_popup[0].transform.GetChild(1).GetComponent<Image>().sprite = item_image;
 
-            Debug.Log("±∏∏≈ øœ∑·");
+            Debug.Log($"{item_name}");
         }
         else
         {
             buy_popup[1].SetActive(true);
 
-            Debug.Log("¿‹æ◊ ∫Œ¡∑");
+            Debug.Log("Îèà Î∂ÄÏ°±");
         }
     }
 }
