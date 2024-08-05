@@ -8,6 +8,7 @@ public class Shop : MonoBehaviour
 {
     [SerializeField] private Money money = null;
     [SerializeField] private SetItemInfo set_item_info = null;
+    [SerializeField] private GameObject[] buy_popup = null;
     [SerializeField] private Transform food_slots = null;
     [SerializeField] private Transform weapon_slots = null;
     [SerializeField] private Transform item_info_popup = null;
@@ -74,10 +75,14 @@ public class Shop : MonoBehaviour
 
             money.SetMoney(result);
 
+            buy_popup[0].SetActive(true);
+
             Debug.Log("구매 완료");
         }
         else
         {
+            buy_popup[1].SetActive(true);
+
             Debug.Log("잔액 부족");
         }
     }
